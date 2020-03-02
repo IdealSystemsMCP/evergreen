@@ -1,4 +1,5 @@
 export { default as defaultTheme } from './src/default-theme'
+export { default as memoizeClassName } from './src/default-theme/utils/memoizeClassName'
 export {
   default as ThemeContext,
   ThemeProvider,
