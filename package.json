@@ -27,9 +27,9 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "prepare": "yarn run build",
+    "prepare": "npm run build",
     "test": "xo && ava",
-    "prepublishOnly": "rm -rf esm commonjs umd && yarn build",
+    "prepublishOnly": "rm -rf esm commonjs umd && npm build",
     "dev": "start-storybook -p 6006",
     "create-package": "./tools/create-package.js",
     "create-package:components": "./tools/create-package-components.js",
@@ -37,12 +37,12 @@
     "build-commonjs": "BABEL_ENV=commonjs babel src --out-dir commonjs --ignore '**/stories','**/test' --source-maps inline",
     "build-esm": "BABEL_ENV=esm babel src --out-dir esm --ignore '**/stories','**/test' --source-maps inline",
     "build-umd": "rollup -c",
-    "build": "concurrently --names 'commonjs,esm' 'yarn build-commonjs' 'yarn build-esm'",
+    "build": "concurrently --names 'commonjs,esm' 'npm build-commonjs' 'npm build-esm'",
     "size": "size-limit",
     "clean": "git clean -Xdf",
     "release": "np",
-    "deploy-docs": "cd docs && yarn install && yarn deploy",
-    "postpublish": "yarn deploy-docs"
+    "deploy-docs": "cd docs && npm install && npm deploy",
+    "postpublish": "npm deploy-docs"
   },
   "engines": {
     "node": ">=10"
