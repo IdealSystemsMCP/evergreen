@@ -1,0 +1,26 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = hashCode;
+
+// http://erlycoder.com/49/javascript-hash-functions-to-convert-string-into-integer-hash-
+function hashCode(s) {
+  var str = String(s);
+  var hash = 0;
+
+  var _char;
+
+  if (str.trim().length === 0) return hash;
+
+  for (var i = 0; i < str.length; i++) {
+    _char = str.charCodeAt(i);
+    hash = (hash << 5) - hash + _char; // Convert to 32bit integer
+
+    hash &= hash;
+  }
+
+  return Math.abs(hash);
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJoYXNoQ29kZSIsInMiLCJzdHIiLCJTdHJpbmciLCJoYXNoIiwiY2hhciIsInRyaW0iLCJsZW5ndGgiLCJpIiwiY2hhckNvZGVBdCIsIk1hdGgiLCJhYnMiXSwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9zcmMvYXZhdGFyL3NyYy91dGlscy9oYXNoLmpzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGh0dHA6Ly9lcmx5Y29kZXIuY29tLzQ5L2phdmFzY3JpcHQtaGFzaC1mdW5jdGlvbnMtdG8tY29udmVydC1zdHJpbmctaW50by1pbnRlZ2VyLWhhc2gtXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBoYXNoQ29kZShzKSB7XG4gIGNvbnN0IHN0ciA9IFN0cmluZyhzKVxuICBsZXQgaGFzaCA9IDBcbiAgbGV0IGNoYXJcbiAgaWYgKHN0ci50cmltKCkubGVuZ3RoID09PSAwKSByZXR1cm4gaGFzaFxuICBmb3IgKGxldCBpID0gMDsgaSA8IHN0ci5sZW5ndGg7IGkrKykge1xuICAgIGNoYXIgPSBzdHIuY2hhckNvZGVBdChpKVxuICAgIGhhc2ggPSAoaGFzaCA8PCA1KSAtIGhhc2ggKyBjaGFyXG4gICAgLy8gQ29udmVydCB0byAzMmJpdCBpbnRlZ2VyXG4gICAgaGFzaCAmPSBoYXNoXG4gIH1cblxuICByZXR1cm4gTWF0aC5hYnMoaGFzaClcbn1cbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBO0FBQ2UsU0FBU0EsUUFBVCxDQUFrQkMsQ0FBbEIsRUFBcUI7RUFDbEMsSUFBTUMsR0FBRyxHQUFHQyxNQUFNLENBQUNGLENBQUQsQ0FBbEI7RUFDQSxJQUFJRyxJQUFJLEdBQUcsQ0FBWDs7RUFDQSxJQUFJQyxLQUFKOztFQUNBLElBQUlILEdBQUcsQ0FBQ0ksSUFBSixHQUFXQyxNQUFYLEtBQXNCLENBQTFCLEVBQTZCLE9BQU9ILElBQVA7O0VBQzdCLEtBQUssSUFBSUksQ0FBQyxHQUFHLENBQWIsRUFBZ0JBLENBQUMsR0FBR04sR0FBRyxDQUFDSyxNQUF4QixFQUFnQ0MsQ0FBQyxFQUFqQyxFQUFxQztJQUNuQ0gsS0FBSSxHQUFHSCxHQUFHLENBQUNPLFVBQUosQ0FBZUQsQ0FBZixDQUFQO0lBQ0FKLElBQUksR0FBRyxDQUFDQSxJQUFJLElBQUksQ0FBVCxJQUFjQSxJQUFkLEdBQXFCQyxLQUE1QixDQUZtQyxDQUduQzs7SUFDQUQsSUFBSSxJQUFJQSxJQUFSO0VBQ0Q7O0VBRUQsT0FBT00sSUFBSSxDQUFDQyxHQUFMLENBQVNQLElBQVQsQ0FBUDtBQUNEIn0=

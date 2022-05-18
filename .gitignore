@@ -1,9 +1,9 @@
 *.log
 node_modules
 .DS_Store
-/commonjs/
-/esm/
-/umd/
+#/commonjs/
+#/esm/
+#/umd/
 /.out/
 /docs/public/
 .cache

@@ -1,0 +1,2 @@
+export { default as Image } from './src/Image';
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJkZWZhdWx0IiwiSW1hZ2UiXSwic291cmNlcyI6WyIuLi8uLi9zcmMvaW1hZ2UvaW5kZXguanMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IHsgZGVmYXVsdCBhcyBJbWFnZSB9IGZyb20gJy4vc3JjL0ltYWdlJ1xuIl0sIm1hcHBpbmdzIjoiQUFBQSxTQUFTQSxPQUFPLElBQUlDLEtBQXBCLFFBQWlDLGFBQWpDIn0=

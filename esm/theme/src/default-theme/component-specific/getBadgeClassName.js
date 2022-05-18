@@ -1,0 +1,32 @@
+import { Themer } from '../../../../themer';
+import memoizeClassName from '../utils/memoizeClassName';
+var interactiveAppearance = Themer.createBadgeAppearance({
+  base: {},
+  hover: {
+    opacity: 0.8
+  }
+});
+/**
+ * Get the appearance of an interactive `Badge`.
+ * @param {string} appearance - the appearance name
+ * @return {string} the appearance object.
+ */
+
+var getBadgeAppearance = function getBadgeAppearance(appearance) {
+  switch (appearance) {
+    case 'interactive':
+      return interactiveAppearance;
+
+    default:
+      return undefined;
+  }
+};
+/**
+ * Get the className of a `Badge`.
+ * @param {string} appearance - the appearance name
+ * @return {string} the appearance class name.
+ */
+
+
+export default memoizeClassName(getBadgeAppearance);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJUaGVtZXIiLCJtZW1vaXplQ2xhc3NOYW1lIiwiaW50ZXJhY3RpdmVBcHBlYXJhbmNlIiwiY3JlYXRlQmFkZ2VBcHBlYXJhbmNlIiwiYmFzZSIsImhvdmVyIiwib3BhY2l0eSIsImdldEJhZGdlQXBwZWFyYW5jZSIsImFwcGVhcmFuY2UiLCJ1bmRlZmluZWQiXSwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvdGhlbWUvc3JjL2RlZmF1bHQtdGhlbWUvY29tcG9uZW50LXNwZWNpZmljL2dldEJhZGdlQ2xhc3NOYW1lLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFRoZW1lciB9IGZyb20gJy4uLy4uLy4uLy4uL3RoZW1lcidcbmltcG9ydCBtZW1vaXplQ2xhc3NOYW1lIGZyb20gJy4uL3V0aWxzL21lbW9pemVDbGFzc05hbWUnXG5cbmNvbnN0IGludGVyYWN0aXZlQXBwZWFyYW5jZSA9IFRoZW1lci5jcmVhdGVCYWRnZUFwcGVhcmFuY2Uoe1xuICBiYXNlOiB7fSxcbiAgaG92ZXI6IHtcbiAgICBvcGFjaXR5OiAwLjhcbiAgfVxufSlcblxuLyoqXG4gKiBHZXQgdGhlIGFwcGVhcmFuY2Ugb2YgYW4gaW50ZXJhY3RpdmUgYEJhZGdlYC5cbiAqIEBwYXJhbSB7c3RyaW5nfSBhcHBlYXJhbmNlIC0gdGhlIGFwcGVhcmFuY2UgbmFtZVxuICogQHJldHVybiB7c3RyaW5nfSB0aGUgYXBwZWFyYW5jZSBvYmplY3QuXG4gKi9cbmNvbnN0IGdldEJhZGdlQXBwZWFyYW5jZSA9IGFwcGVhcmFuY2UgPT4ge1xuICBzd2l0Y2ggKGFwcGVhcmFuY2UpIHtcbiAgICBjYXNlICdpbnRlcmFjdGl2ZSc6XG4gICAgICByZXR1cm4gaW50ZXJhY3RpdmVBcHBlYXJhbmNlXG4gICAgZGVmYXVsdDpcbiAgICAgIHJldHVybiB1bmRlZmluZWRcbiAgfVxufVxuXG4vKipcbiAqIEdldCB0aGUgY2xhc3NOYW1lIG9mIGEgYEJhZGdlYC5cbiAqIEBwYXJhbSB7c3RyaW5nfSBhcHBlYXJhbmNlIC0gdGhlIGFwcGVhcmFuY2UgbmFtZVxuICogQHJldHVybiB7c3RyaW5nfSB0aGUgYXBwZWFyYW5jZSBjbGFzcyBuYW1lLlxuICovXG5leHBvcnQgZGVmYXVsdCBtZW1vaXplQ2xhc3NOYW1lKGdldEJhZGdlQXBwZWFyYW5jZSlcbiJdLCJtYXBwaW5ncyI6IkFBQUEsU0FBU0EsTUFBVCxRQUF1QixvQkFBdkI7QUFDQSxPQUFPQyxnQkFBUCxNQUE2QiwyQkFBN0I7QUFFQSxJQUFNQyxxQkFBcUIsR0FBR0YsTUFBTSxDQUFDRyxxQkFBUCxDQUE2QjtFQUN6REMsSUFBSSxFQUFFLEVBRG1EO0VBRXpEQyxLQUFLLEVBQUU7SUFDTEMsT0FBTyxFQUFFO0VBREo7QUFGa0QsQ0FBN0IsQ0FBOUI7QUFPQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUNBLElBQU1DLGtCQUFrQixHQUFHLFNBQXJCQSxrQkFBcUIsQ0FBQUMsVUFBVSxFQUFJO0VBQ3ZDLFFBQVFBLFVBQVI7SUFDRSxLQUFLLGFBQUw7TUFDRSxPQUFPTixxQkFBUDs7SUFDRjtNQUNFLE9BQU9PLFNBQVA7RUFKSjtBQU1ELENBUEQ7QUFTQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOzs7QUFDQSxlQUFlUixnQkFBZ0IsQ0FBQ00sa0JBQUQsQ0FBL0IifQ==

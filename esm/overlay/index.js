@@ -1,0 +1,2 @@
+export { default as Overlay } from './src/Overlay';
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJkZWZhdWx0IiwiT3ZlcmxheSJdLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9vdmVybGF5L2luZGV4LmpzIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCB7IGRlZmF1bHQgYXMgT3ZlcmxheSB9IGZyb20gJy4vc3JjL092ZXJsYXknXG4iXSwibWFwcGluZ3MiOiJBQUFBLFNBQVNBLE9BQU8sSUFBSUMsT0FBcEIsUUFBbUMsZUFBbkMifQ==

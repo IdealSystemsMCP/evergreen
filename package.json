@@ -27,7 +27,6 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "prepare": "npm run build",
     "test": "xo && ava",
     "prepublishOnly": "rm -rf esm commonjs umd && npm run build",
     "dev": "start-storybook -p 6006",
@@ -55,6 +54,7 @@
     "classnames": "^2.2.6",
     "dom-helpers": "^3.2.1",
     "downshift": "^3.3.1",
+    "eslint": ">=5.0.0 <6.0.0",
     "fuzzaldrin-plus": "^0.6.0",
     "glamor": "^2.20.40",
     "lodash.debounce": "^4.0.8",
@@ -64,7 +64,8 @@
     "react-tiny-virtual-list": "^2.1.4",
     "react-transition-group": "^2.5.0",
     "tinycolor2": "^1.4.1",
-    "ui-box": "^2.1.2"
+    "ui-box": "^2.1.2",
+    "webpack": ">=3.0.0 <4.0.0"
   },
   "peerDependencies": {
     "react": "^16.8.0",
@@ -209,10 +210,5 @@
       "path": "umd/evergreen.min.js",
       "limit": "212 KB"
     }
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  }
+  ]
 }

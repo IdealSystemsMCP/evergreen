@@ -1,0 +1,2 @@
+export { default as Spinner } from './src/Spinner';
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJkZWZhdWx0IiwiU3Bpbm5lciJdLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zcGlubmVyL2luZGV4LmpzIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCB7IGRlZmF1bHQgYXMgU3Bpbm5lciB9IGZyb20gJy4vc3JjL1NwaW5uZXInXG4iXSwibWFwcGluZ3MiOiJBQUFBLFNBQVNBLE9BQU8sSUFBSUMsT0FBcEIsUUFBbUMsZUFBbkMifQ==

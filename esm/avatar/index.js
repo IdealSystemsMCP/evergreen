@@ -1,0 +1,2 @@
+export { default as Avatar } from './src/Avatar';
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJkZWZhdWx0IiwiQXZhdGFyIl0sInNvdXJjZXMiOlsiLi4vLi4vc3JjL2F2YXRhci9pbmRleC5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgeyBkZWZhdWx0IGFzIEF2YXRhciB9IGZyb20gJy4vc3JjL0F2YXRhcidcbiJdLCJtYXBwaW5ncyI6IkFBQUEsU0FBU0EsT0FBTyxJQUFJQyxNQUFwQixRQUFrQyxjQUFsQyJ9

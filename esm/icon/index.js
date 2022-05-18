@@ -1,0 +1,2 @@
+export { default as Icon, IconNames } from './src/Icon';
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJkZWZhdWx0IiwiSWNvbiIsIkljb25OYW1lcyJdLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9pY29uL2luZGV4LmpzIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCB7IGRlZmF1bHQgYXMgSWNvbiwgSWNvbk5hbWVzIH0gZnJvbSAnLi9zcmMvSWNvbidcbiJdLCJtYXBwaW5ncyI6IkFBQUEsU0FBU0EsT0FBTyxJQUFJQyxJQUFwQixFQUEwQkMsU0FBMUIsUUFBMkMsWUFBM0MifQ==

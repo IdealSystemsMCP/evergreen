@@ -1,0 +1,22 @@
+import tinycolor from 'tinycolor2';
+import palette from '../foundational-styles/palette';
+
+var getTooltipProps = function getTooltipProps(appearance) {
+  switch (appearance) {
+    case 'card':
+      return {
+        backgroundColor: 'white',
+        elevation: 3
+      };
+
+    case 'default':
+    default:
+      return {
+        color: 'white',
+        backgroundColor: tinycolor(palette.neutral.base).setAlpha(0.95).toString()
+      };
+  }
+};
+
+export default getTooltipProps;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJ0aW55Y29sb3IiLCJwYWxldHRlIiwiZ2V0VG9vbHRpcFByb3BzIiwiYXBwZWFyYW5jZSIsImJhY2tncm91bmRDb2xvciIsImVsZXZhdGlvbiIsImNvbG9yIiwibmV1dHJhbCIsImJhc2UiLCJzZXRBbHBoYSIsInRvU3RyaW5nIl0sInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vc3JjL3RoZW1lL3NyYy9kZWZhdWx0LXRoZW1lL2NvbXBvbmVudC1zcGVjaWZpYy9nZXRUb29sdGlwUHJvcHMuanMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHRpbnljb2xvciBmcm9tICd0aW55Y29sb3IyJ1xuaW1wb3J0IHBhbGV0dGUgZnJvbSAnLi4vZm91bmRhdGlvbmFsLXN0eWxlcy9wYWxldHRlJ1xuXG5jb25zdCBnZXRUb29sdGlwUHJvcHMgPSBhcHBlYXJhbmNlID0+IHtcbiAgc3dpdGNoIChhcHBlYXJhbmNlKSB7XG4gICAgY2FzZSAnY2FyZCc6XG4gICAgICByZXR1cm4ge1xuICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6ICd3aGl0ZScsXG4gICAgICAgIGVsZXZhdGlvbjogM1xuICAgICAgfVxuICAgIGNhc2UgJ2RlZmF1bHQnOlxuICAgIGRlZmF1bHQ6XG4gICAgICByZXR1cm4ge1xuICAgICAgICBjb2xvcjogJ3doaXRlJyxcbiAgICAgICAgYmFja2dyb3VuZENvbG9yOiB0aW55Y29sb3IocGFsZXR0ZS5uZXV0cmFsLmJhc2UpXG4gICAgICAgICAgLnNldEFscGhhKDAuOTUpXG4gICAgICAgICAgLnRvU3RyaW5nKClcbiAgICAgIH1cbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBnZXRUb29sdGlwUHJvcHNcbiJdLCJtYXBwaW5ncyI6IkFBQUEsT0FBT0EsU0FBUCxNQUFzQixZQUF0QjtBQUNBLE9BQU9DLE9BQVAsTUFBb0IsZ0NBQXBCOztBQUVBLElBQU1DLGVBQWUsR0FBRyxTQUFsQkEsZUFBa0IsQ0FBQUMsVUFBVSxFQUFJO0VBQ3BDLFFBQVFBLFVBQVI7SUFDRSxLQUFLLE1BQUw7TUFDRSxPQUFPO1FBQ0xDLGVBQWUsRUFBRSxPQURaO1FBRUxDLFNBQVMsRUFBRTtNQUZOLENBQVA7O0lBSUYsS0FBSyxTQUFMO0lBQ0E7TUFDRSxPQUFPO1FBQ0xDLEtBQUssRUFBRSxPQURGO1FBRUxGLGVBQWUsRUFBRUosU0FBUyxDQUFDQyxPQUFPLENBQUNNLE9BQVIsQ0FBZ0JDLElBQWpCLENBQVQsQ0FDZEMsUUFEYyxDQUNMLElBREssRUFFZEMsUUFGYztNQUZaLENBQVA7RUFSSjtBQWVELENBaEJEOztBQWtCQSxlQUFlUixlQUFmIn0=
